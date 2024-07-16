@@ -158,7 +158,7 @@
 ===> "git diff" it will point out what are differnces between the version/files in the current directory 
 and the most recent version in the HEAD    
 
-==> "git add ." ==> to add every single file in the project into the repository 
+==> "git add ." ==> to add every single file in the project into the repository using "period" at the end
 
 ==> "git restore <file>..." to discard changes in working directory
 
