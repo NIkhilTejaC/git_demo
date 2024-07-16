@@ -141,4 +141,27 @@
 
                         ==> Everything on the README file will be put up on the main page of our repository 
 
-                        
+
+# Adding a file to our repository :
+    ==> "git add file_name" adds file to our reository 
+
+    ==> the letter gets changed from "U" to "A"
+
+    ==> "U" - untracked , "A" - added to the index
+
+    ==> to commit changes `git commit -m "added file" `
+        --> -M says that we are adding a message
+
+    ==> Now the letter gets changed to "M" - modified , if we type something in the file    
+
+
+===> "git diff" it will point out what are differnces between the version/files in the current directory 
+and the most recent version in the HEAD    
+
+==> "git add ." ==> to add every single file in the project into the repository 
+
+==> "git restore <file>..." to discard changes in working directory
+
+==> use "git add <file>..." to update what will be committed
+
+==> no changes added to commit (use "git add" and/or "git commit -a")
