@@ -165,3 +165,10 @@ and the most recent version in the HEAD
 ==> use "git add <file>..." to update what will be committed
 
 ==> no changes added to commit (use "git add" and/or "git commit -a")
+
+==> "git push"
+fatal: The current branch store has no upstream branch.
+                     ||
+To push the current branch and set the remote as upstream, use
+                     ||
+    "git push --set-upstream origin store"
