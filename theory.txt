@@ -1,0 +1,144 @@
+            ****GIT****
+==> It is a version control system
+
+==> It is a DISTRIBUTED version control system
+
+==> It makes tracking changes to our code over time easier
+
+==> We can easily switch versions of our code
+
+==> We can UNDO Changes
+
+==> It also makes easy for teams of people to work on the same project
+
+
+             ****GITHUB****
+-->  It is a website where devlopers can store their projects for other devlopers to access
+
+--> REMOTE REPOSITORY
+
+--> It only stores code
+
+
+##### Initialize GIT in a project ####
+
+1. Run the "git init" in terminal from the folder that contains all our project files
+   
+   1.1 This will add ".git" folder to our project
+
+   1.2 ".git" folder will track all the cahnges we made to the project
+
+2. GIT uses "repository" or "repo" to describe the entire project being managed by GIT
+
+
+##### Cloning a Repository #####
+
+1. Either create a new repository to clone or a existing repository 
+
+2. Copy the link to clone the project
+
+3. Copy the SSH url not the HTTP url 
+
+4. Type in terminal "git clone ssh_url"
+     
+     4.1 this will copy all the code from the repository onto our computer
+      
+     4.2 the ".git" folder will be added up to track the changes 
+
+     4.3 This also adds "Remote" repository to our git config
+
+         4.3.1 When we want to push changes to github , git already knows where to push to 
+        
+
+ ##########  STRUCTURE of GIT ##########
+
+ # GIT tracks changes through three(3) stages
+
+ 1. Working Directory    2. Index    3. Head  
+
+ 1. Working Directory :
+    
+    ==> It is all the files in te local repository in the current state
+
+    ==> None of the changes in the working directory are tracked by GIT
+
+    ==> To track the changes we need to add them to index (STAGING)
+
+
+2. INDEX / STAGING: 
+
+    ==> Staging is done by command "git add"
+
+    ==> By Staging we tell git that we want to track all the changes we made to our  working directory 
+
+    ==> This does not make changes to the official version of our code 
+
+    ==> To make official we need to COMMIT these changes from index to head
+
+
+3. HEAD :     
+
+    ==> This tells GIT that the changes are final 
+
+    ==> This requires a "MESSAGE" to be saved with the COMMIT
+
+    ==>this is done using command "git commit"
+
+    ==> Head is the most recently committed version of our code
+
+    ==> After committing to HEAD they are saved as a version on our computer 
+
+    ==> They are not on our  remote repository on GITHUB
+
+    ==> In order to get these changes to our remote repository we need to push them to github 
+
+    ==> Use command "git push" to push changes to remote repository  
+
+"git remote add origin ssh_url" 
+
+==> This tells GIT that we have remote repository called ORIGIN at the copied url
+
+
+                ##### PULLING #####
+
+# If one of our team member wants to pull down the changes that we push to github on his local computer
+
+==> We use command "git pull" :
+                    --> Copies everything from remote repository to our computer
+
+
+
+                %%%%   BRANCHES   %%%%
+
+# These are a copy of the code at a point in time that has it's own seperate history from the main branch
+
+==> The main branch is "MASTER"
+
+==> Eg. 2 teams Team A and Team B working on 2 features os a application
+
+       --> Team A and B create their own Branch of Master respectively
+
+       --> Teams when pushing changes will be pushing into their branches and not the master Branch
+
+       --> This is done using command "git branch feature_a"  and "git branch feature_b"
+
+       --> To SWITCH to that branch we use command "git checkout feature_a" and "git checkout feature_b"
+       
+       --> To CREATE a new branch and SWAP to it we use "git checkout -b feature_1" for feature A branch and so on 
+
+       ==> To merge changes from branch to MASTER 
+           
+           --> "git merge feature_a" merges feature A branch to MASTER
+
+           --> Git notifies us if any conflicts arise during merging
+
+
+
+ $$$$ Creating a new repository $$$$
+
+ # Initialise this repository with a README : 
+                        ==> We can clone this project down to our computer           
+
+                        ==> Everything on the README file will be put up on the main page of our repository 
+
+                        
